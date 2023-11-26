@@ -1,0 +1,26 @@
+GET http://localhost:3000/subscribers
+
+###
+GET http://localhost:3000/subscribers/6562e19a2e025aacf43978c1
+
+
+###
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name":"amazing person2",
+    "subscriberToChannel":"web dev simplified2"
+}
+
+###
+DELETE http://localhost:3000/subscribers/6562e19a2e025aacf43978c1
+
+###
+PATCH  http://localhost:3000/subscribers/6562dca52e025aacf43978be
+Content-Type: application/json
+
+{
+   "name": "emmashi",
+    "subscriberToChannel": "web emms"
+}
